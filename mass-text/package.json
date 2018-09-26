@@ -1,0 +1,15 @@
+{
+  "name": "mass-text",
+  "version": "1.0.0",
+  "description": "Use twillio to send mass texts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Maness",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.1.6",
+    "twilio": "^3.20.0"
+  }
+}

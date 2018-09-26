@@ -1,0 +1,26 @@
+{
+  "name": "sms-survey",
+  "version": "1.0.0",
+  "description": "App to send sms surveys",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npm-ngrok-setup": "./ngrok authtoken 8efp3G86igNxqsDNfwoo_4PuK9FiXmEQTZ1UQsvcuz",
+    "n1": "ngrok http 8083",
+    "n3": "node index.js",
+    "n2": "mongod --dbpath=/Users/jomaness/data/db",
+    "start": "concurrently \"npm:n1\" \"npm:n2\" \"npm:n3\""
+  },
+  "author": "Jordan Maness",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "mongodb": "^3.1.4",
+    "twilio": "^3.19.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}
